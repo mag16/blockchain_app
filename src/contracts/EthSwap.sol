@@ -43,6 +43,9 @@ contract EthSwap {
         //calculate the amount of ether to redeem
         uint etherAmount = _amount / rate;
 
+        //require that EthSwap has enough Ether
+        require(address(this).balance >= etherAmount);
+
         // Perform sale
         token.transferFrom(msg.sender, address(this), _amount);
         msg.sender.transfer(etherAmount);
