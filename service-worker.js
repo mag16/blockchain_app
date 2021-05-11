@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/mag16/blockchain_app/precache-manifest.a18a245e1af8b71eafb2cbc804d24dc6.js"
+  "/blockchain_app/precache-manifest.5b5680cf86e3d28b99f3caca859cd9d3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/mag16/blockchain_app/index.html", {
+workbox.routing.registerNavigationRoute("/blockchain_app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
